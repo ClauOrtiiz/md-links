@@ -39,7 +39,7 @@ const extractLinks = (routes) => {
             const href = link.slice(link.indexOf('(') + 1, -1);
             const linkProperties = {
                 href: href,
-                text: text,
+                text: text.substring(0,50),
                 file: route,
             };
             return linkProperties;
@@ -100,19 +100,19 @@ const validatingLinks = (linkList) => {
 
 
 
-const stats  = (validatedLinkList) => {
+const stats = (validatedLinkList) => {
     let uniqueSet = new Set(validatedLinkList.map((link) => link.href)).size;
     return {
         Total: validatedLinkList.length,
-        Unique: uniqueSet, 
+        Unique: uniqueSet,
     };
 };
 
-const statsBroken  = (validatedLinkList) => {
+const statsBroken = (validatedLinkList) => {
     let uniqueSet = new Set(validatedLinkList.map((link) => link.href)).size;
     return {
         Total: validatedLinkList.length,
-        Unique: uniqueSet, 
+        Unique: uniqueSet,
         Broken: (validatedLinkList.filter(element => element.message === 'fail')).length,
     };
 };
