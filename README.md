@@ -1,6 +1,6 @@
 # Markdown Links
 
-Herramienta que lee y analiza archivos en formato Markdown ".md", verifica los links que contenga y muestra estadísticas.
+Herramienta que lee y analiza archivos en formato Markdown ".md" para luego verificar los links que contenga y brindar estadísticas.
 ***
 ## 1. Instalación
 
