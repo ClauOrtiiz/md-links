@@ -1,5 +1,13 @@
 # Markdown Links
-Herramienta que analiza archivos en formato Markdown para verificar los links que contengan y reportar estadísticas.
+
+Herramienta que lee y analiza archivos en formato Markdown ".md" para verificar los links que contengan y reportar estadísticas.
+***
+## 1. Instalación
+
+Ejecutar la siguiente linea de comando: 
+`npm install mdlinks-ortiz`
+
+## 2. Guia de uso
 
 ## Índice
 
@@ -13,12 +21,6 @@ Herramienta que analiza archivos en formato Markdown para verificar los links qu
 * [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
 * [9. Checklist](#9-checklist)
 * [10. Achicando el problema](#10-achicando-el-problema)
-
-***
-
-## 1. Instalación
-
-`npm install mdlinks-ortiz`
 
 ## 1. Preámbulo
 
