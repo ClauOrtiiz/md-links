@@ -10,7 +10,9 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "lint": "eslint .  --ext .js",
+    "lint-fix": "eslint . --ext .js --fix"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
   },
   "homepage": "https://github.com/ClauOrtiiz/md-links#readme",
   "dependencies": {
+    "axios": "^1.4.0",
     "eslint": "^8.40.0",
     "jest": "^29.5.0"
   }
