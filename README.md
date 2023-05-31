@@ -18,7 +18,7 @@ Herramienta que analiza archivos en formato Markdown para verificar los links qu
 
 ## 1. Instalación
 
-npm install mdlinks-ortiz
+`npm install mdlinks-ortiz`
 
 ## 1. Preámbulo
 
