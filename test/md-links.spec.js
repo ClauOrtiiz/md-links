@@ -64,7 +64,7 @@ describe('mdLinks', () => {
   it('deberia ser una funcion', () => {
     expect(typeof mdLinks).toBe('function');
   });
-      //---Ruta no existe
+  //---Ruta no existe
   it('Debe rechazar la promesa cuando el Path no existe', () => {
     return mdLinks('/prueba/components/x.md').catch((error) => {
       expect(error).toBe('La ruta no existe (fin)');
@@ -76,7 +76,7 @@ describe('mdLinks', () => {
       // console.log(data);
       expect(data[0]).toEqual(linkProperties[0]);
     });
-});
+  });
 });
 //Ruta absoluta
 describe('Permite convertir ruta relativa', () => {
@@ -122,27 +122,27 @@ describe('Valida el link que se encuentra en la ruta ingresada', () => {
     jest.spyOn(axios, 'get').mockReturnValue(Promise.resolve({ status: 200 }))
 
     validatingLinks(linkProperties)
-    .then((data) => {
-      expect(data).toEqual(statsLinks);
-    })
+      .then((data) => {
+        expect(data).toEqual(statsLinks);
+      })
   });
 
   it('Debería devolvernos una promesa con status 400', () => {
     jest.spyOn(axios, 'get').mockReturnValue(Promise.resolve({ status: 400 }))
 
     validatingLinks(linkProperties)
-    .then((data) => {
-      expect(data).toEqual(failStatsLinks);
-    })
+      .then((data) => {
+        expect(data).toEqual(failStatsLinks);
+      })
   });
 
   it('Debería devolvernos una promesa con error', () => {
     jest.spyOn(axios, 'get').mockReturnValue(Promise.reject())
 
     validatingLinks(linkProperties)
-    .then((data) => {
-      expect(data).toEqual(failStatsLinks);
-    })
+      .then((data) => {
+        expect(data).toEqual(failStatsLinks);
+      })
   });
 });
 
