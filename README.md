@@ -1,4 +1,5 @@
 # Markdown Links
+Herramienta que analiza archivos en formato Markdown para verificar los links que contengan y reportar estadísticas.
 
 ## Índice
 
