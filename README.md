@@ -3,7 +3,7 @@ Herramienta que analiza archivos en formato Markdown para verificar los links qu
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
+* [1. Instalación](#1-instalación)
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
 * [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
 * [4. Consideraciones generales](#4-consideraciones-generales)
@@ -15,6 +15,10 @@ Herramienta que analiza archivos en formato Markdown para verificar los links qu
 * [10. Achicando el problema](#10-achicando-el-problema)
 
 ***
+
+## 1. Instalación
+
+npm install mdlinks-ortiz
 
 ## 1. Preámbulo
 
