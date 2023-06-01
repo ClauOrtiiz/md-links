@@ -117,12 +117,10 @@ algunas estadísticas.
 Organicé las tareas en GitHub-projects, desarroll el diagrama de flujo e
 instale las dependencias que necesitaba.
 
-### GitHub-projects 
-
 ### Diagrama de flujo 
-
+![diagrama-de-flujo](./test/img/diagrama-de-flujo.png)
 
 ## Pruebas Unitarias
  Para las pruebas unitarias utilice Jest.
-
+![pruebas-unitarias](./test/img/test.png)
  
