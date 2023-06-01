@@ -93,8 +93,6 @@ Unique: 3
 Broken: 1
 ```
 
-
-
 ***
 ## Sobre el proyecto 
 
@@ -124,3 +122,4 @@ instale las dependencias que necesitaba.
  Para las pruebas unitarias utilice Jest.
 ![pruebas-unitarias](./test/img/test.png)
  
+
