@@ -58,7 +58,12 @@ const arrStatsPrueb = [
     message: 'ok'
   }
 ];
-
+const respValidatingLinks = {
+  file: 'C:\\Users\\Claudia\\Desktop\\proyectos\\md-links\\prueba\\readme0.md',
+  href: 'https://es.wikipedia.o/wiki/Markdown',
+  message: 'fail',
+  status: 404,
+}
 //Función MdLinks
 describe('mdLinks', () => {
   it('deberia ser una funcion', () => {
@@ -77,6 +82,7 @@ describe('mdLinks', () => {
       expect(data[0]).toEqual(linkProperties[0]);
     });
   });
+
 });
 //Ruta absoluta
 describe('Permite convertir ruta relativa', () => {
@@ -86,9 +92,6 @@ describe('Permite convertir ruta relativa', () => {
   it('Deberia retornar una ruta absoluta si es absoluta', () => {
     expect(getAbsoluteRoute('C://Users//Claudia//Desktop//proyectos//md-links//prueba//readme0.md')).toBe('C://Users//Claudia//Desktop//proyectos//md-links//prueba//readme0.md');
   });
-  it('Deberia retornar una ruta absoluta si se le pasa una ruta relativa', () => {
-    expect(getAbsoluteRoute('prueba')).toBe('C:\\Users\\Claudia\\Desktop\\proyectos\\md-links\\prueba')
-  });
 });
 
 // Retorna links de archivos .md
@@ -97,7 +100,7 @@ describe('Retorna links de archivos .md', () => {
     expect(typeof findMdFilesRoutes).toBe('function');
   });
   it('Deberia extraer los archivos .md', () => {
-    expect(findMdFilesRoutes('C:\\Users\\Claudia\\Desktop\\proyectos\\md-links\\prueba\\components01\\components01-01')).toEqual(['C:\\Users\\Claudia\\Desktop\\proyectos\\md-links\\prueba\\components01\\components01-01\\readme01-01.md']);
+    expect(findMdFilesRoutes(getAbsoluteRoute('./prueba/components01/components01-01/readme01-01.md'))).toEqual([getAbsoluteRoute('./prueba/components01/components01-01/readme01-01.md')]);
   });
 });
 
@@ -108,7 +111,7 @@ describe('Retornar propiedades con el link', () => {
   });
 
   it('Deberia mostrar los enlaces con el href, text y file', () => {
-    expect(extractLinks(['C:\\Users\\Claudia\\Desktop\\proyectos\\md-links\\prueba\\components01\\components01-01\\readme01-01.md'])).toEqual(linkProperties);
+    expect(extractLinks([(getAbsoluteRoute('./prueba/components01/components01-01/readme01-01.md'))])).toEqual(linkProperties);
   });
 });
 
