@@ -123,5 +123,7 @@ instale las dependencias que necesitaba.
 
 
 ## Pruebas Unitarias
+ Para las pruebas unitarias utilice Jest.
+
 
 
