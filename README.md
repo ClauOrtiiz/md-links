@@ -6,7 +6,7 @@ para luego verificar los links que contenga y brindar estadísticas.
 ## 1. Instalación
 
 Ejecutar la siguiente linea de comando: 
-`npm i mdlinks-ortiz` o`npm install mdlinks-ortiz`
+`npm i mdlinks-ortiz`  o  `npm install mdlinks-ortiz`
 
 ## 2. Guia de uso
 
@@ -30,10 +30,8 @@ File: ./some/example.md
 Href: http://google.com/ 
 Text: Google
 ```
-
-El comportamiento por defecto no debe validar si las URLs responden ok o no,
-solo debe identificar el archivo markdown (a partir de la ruta que recibe como
-argumento), analizar el archivo Markdown e imprimir los links que vaya
+Identifica el archivo markdown (a partir de la ruta que recibe como
+argumento), analiza el archivo Markdown e imprimir los links que vaya
 encontrando, junto con la ruta del archivo donde aparece y el texto
 que hay dentro del link (truncado a 50 caracteres).
 
@@ -41,17 +39,31 @@ que hay dentro del link (truncado a 50 caracteres).
 
 ##### `--validate`
 
-Si pasamos la opción `--validate`, el módulo debe hacer una petición HTTP para
-averiguar si el link funciona o no. Si el link resulta en una redirección a una
-URL que responde ok, entonces consideraremos el link como ok.
+`mdlinks-ortiz <path-to-file> --validate`
+
+El módulo realizá una petición HTTP donde averigua si el link funciona o no.
 
 Por ejemplo:
 
 ```sh
 $ md-links ./some/example.md --validate
-./some/example.md http://algo.com/2/3/ ok 200 Link a algo
-./some/example.md https://otra-cosa.net/algun-doc.html fail 404 algún doc
-./some/example.md http://google.com/ ok 301 Google
+File:     ./some/example.md 
+Href:     http://algo.com/2/3/ 
+mesagge:  ok
+Status:   200 
+Text:     Link a algo
+
+File:     ./some/example.md
+Href:     https://otra-cosa.net/algun-doc.html 
+Message:  fail
+Status:   404     
+Text:     algún doc
+
+File:     ./some/example.md
+Href:     http://google.com/
+Message:  ok 
+Status:   301
+Text:     Google
 ```
 
 Vemos que el _output_ en este caso incluye la palabra `ok` o `fail` después de
@@ -60,37 +72,29 @@ URL.
 
 ##### `--stats`
 
+`mdlinks-ortiz <path-to-file> --stats`
+
 Si pasamos la opción `--stats` el output (salida) será un texto con estadísticas
 básicas sobre los links.
 
 ```sh
-$ md-links ./some/example.md --stats
-Total: 3
-Unique: 3
+$ mdlinks-ortiz ./some/example.md --stats
+Total:   3
+Unique:  3
 ```
 
 También podemos combinar `--stats` y `--validate` para obtener estadísticas que
 necesiten de los resultados de la validación.
 
 ```sh
-$ md-links ./some/example.md --stats --validate
-Total: 3
+$ mdlinks-ortiz ./some/example.md --stats --validate
+Total:  3
 Unique: 3
 Broken: 1
 ```
 
-## Índice
 
-* [1. Instalación](#1-instalación)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Entregables](#6-entregables)
-* [7. Hacker edition](#7-hacker-edition)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Checklist](#9-checklist)
-* [10. Achicando el problema](#10-achicando-el-problema)
+
 
 ## 1. Preámbulo
 
