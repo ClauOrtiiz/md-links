@@ -114,13 +114,14 @@ algunas estadísticas.
 
 ## Plan de Acción 
 
-Organicé las tareas en GitHub-projects, desarroll el diagrama de flujo e
-instale las dependencias que necesitaba.
+Organicé las tareas en GitHub-projects, desarrolle el diagrama de flujo e instale las dependencias que necesitaba.
 
 ### Diagrama de flujo 
+
 ![diagrama-de-flujo](./test/img/diagrama-de-flujo.png)
 
 ## Pruebas Unitarias
- Realice las siguientes pruebas unitarias en Jest.
+ Pruebas unitarias en Jest.
+
 ![pruebas-unitarias](./test/img/test.png)
  
