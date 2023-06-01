@@ -17,7 +17,7 @@ Se ejecuta de la siguiente manera a través de la **terminal**:
 Por ejemplo:
 
 ```sh
-$ md-links ./some/example.md
+$ mdlinks-ortiz ./some/example.md
 File:  ./some/example.md 
 Href: http://algo.com/2/3/ 
 Text: Link a algo
@@ -46,7 +46,7 @@ El módulo realizá una petición HTTP donde averigua si el link funciona o no.
 Por ejemplo:
 
 ```sh
-$ md-links ./some/example.md --validate
+$ mdlinks-ortiz ./some/example.md --validate
 File:     ./some/example.md 
 Href:     http://algo.com/2/3/ 
 mesagge:  ok
@@ -95,8 +95,8 @@ Broken: 1
 
 
 
-
-## 1. Preámbulo
+***
+## Sobre el proyecto 
 
 [Markdown](https://es.wikipedia.org/wiki/Markdown) es un lenguaje de marcado
 ligero muy popular entre developers. Es usado en muchísimas plataformas que
