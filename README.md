@@ -1,4 +1,4 @@
-# Markdown Links
+# MdLinks-ortiz (markdown links)
 
 Herramienta que lee y analiza archivos en formato Markdown ".md"
 para luego verificar los links que contenga y brindar estadísticas.
