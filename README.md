@@ -121,6 +121,6 @@ instale las dependencias que necesitaba.
 ![diagrama-de-flujo](./test/img/diagrama-de-flujo.png)
 
 ## Pruebas Unitarias
- Para las pruebas unitarias utilice Jest.
+ Realice las siguientes pruebas unitarias en Jest.
 ![pruebas-unitarias](./test/img/test.png)
  
