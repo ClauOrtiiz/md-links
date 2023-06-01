@@ -93,8 +93,6 @@ Unique: 3
 Broken: 1
 ```
 
-
-
 ***
 ## Sobre el proyecto 
 
@@ -125,3 +123,4 @@ Organicé las tareas en GitHub-projects, desarrolle el diagrama de flujo e insta
 
 ![pruebas-unitarias](./test/img/test.png)
  
+
