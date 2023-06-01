@@ -114,7 +114,7 @@ algunas estadísticas.
 
 ## Plan de Acción 
 
-Organicé las tareas en GitHub-projects, desarrolle el diagrama de flujo e
+Organicé las tareas en GitHub-projects, desarroll el diagrama de flujo e
 instale las dependencias que necesitaba.
 
 ### GitHub-projects 
